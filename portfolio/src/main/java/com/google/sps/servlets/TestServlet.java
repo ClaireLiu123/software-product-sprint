@@ -7,14 +7,24 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /** Handles requests sent to the /hello URL. Try running a server and navigating to /hello! */
-@WebServlet("/hello")
-public class HelloWorldServlet extends HttpServlet {
+@WebServlet("/test")
+public class TestServlet extends HttpServlet {
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     response.setContentType("text/html;");
+    String color = getRandomColor();
+
     response.getWriter().println("<h1>Hello Claire!</h1>");
-    response.getWriter().println("<h1>Hello Claire!</h1>");
-  }
+    response.getWriter().println(color);
+    }
+
+    public String getRandomColor(){
+        String[] colors = {"blue", "green", "red", "purple", "yellow", "white", "pink"};  
+        String color = colors[(int) Math.floor(Math.random() * colors.length)];
+        return color;
+    }
 }
+
+
 
