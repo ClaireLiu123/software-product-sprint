@@ -1,7 +1,6 @@
 package com.google.sps.servlets;
 
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import javax.servlet.annotation.WebServlet;

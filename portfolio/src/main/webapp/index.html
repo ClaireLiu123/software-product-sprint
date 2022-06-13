@@ -63,9 +63,16 @@
 
     <p4>Hey, click on the button below to get a different color</p4>
     <p5 id = "color-container"></p5>
-    <button onclick = "addColors();">
+    <!-- <button action="/test" onclick = "addColors();">
         Test Servelet Test
-    </button>
+    </button> -->
+
+    <form action="/form-handler" method="POST">
+        <p>Enter your favorite quote here:</p>
+        <textarea name="text-input">type here</textarea>
+        <br/>
+        <input type="submit" />
+    </form>
     
     </div>
   </body>
