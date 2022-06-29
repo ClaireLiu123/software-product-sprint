@@ -3,17 +3,80 @@
   <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
-  <body>
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
+      <body style="background-color:pink;"></body>
+      <h1>Claire's Portfolio</h1>
+      <a href = "https://www.linkedin.com/in/claire-liu-9676931ba/">
+        <img src="images/linkedin.svg" width="20" height="20"/>
+    </a>
+      <a href = "https://github.com/ClaireLiu123">
+        <img src="images/github.svg" width="20" height="20" />
+    </a>
+        
+      <a href="mailto:claireliu123@berkeley.edu">
+        <img src="images/mail.svg" width="20" height="20"/>
+    </a>   
+
+      <p>I am a junior majoring in computer science at University of California Berkeley. I mainly focused on project management, software development, and game design. </p>
+      <p>As a child and especially now, I am fascinated by the endless limits of how technology can be used for human creativity, especially video games. I can create a virtual world where I can jump out of space, a world where I can breathe like a fish underwater; there are endless possibilities for a virtual world powered by technology. Video games would fascinate and entrance me into an immersive virtual world where I only felt happiness. It is my lifelong dream to be able to do the same for others. When I was young, my father had introduced me to the technical side of the technology that powered such video games. Instead of being scared of the complex technology that powered these games, I became more interested and intrigued. I was inspired to take a computer science class where I ended up developing more of a passion for a career in programming. Being able to explore unique ways to solve problems, especially difficult ones, brought great satisfaction and excitement for me. I know if I could solve these tough programming problems/projects, I could do the same for video game development.</p>
+      
+<!--       
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
       <p>Click here to get a random message:</p>
       <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+      <div id="greeting-container"></div> -->
+
+      <p1>
+          List of projects I've worked on:
+      </p>
+      <ul>
+        <li>
+            Google CSSI pixel 2D game
+        </li>
+        <li>
+            <a href="https://github.com/ClaireLiu123/CS61B-proj-and-labs/tree/main/proj2">Gitlet include all the features of Github</a>
+        </li>
+        <li>
+            <a href="https://github.com/ClaireLiu123/CS61B-proj-and-labs/tree/main/proj0">Game 2048</a>
+        </li>
+      </ul>
+
+      <p2>
+          Gallery 
+    <br>      
+    </p2>
+
+      <img src="images/download.jpeg" width="100" height="100"/>
+      <img src="images/eiffel-tower-in-paris-151-medium.jpeg" width="100" height="100"/>
+      <img src="images/place1.jpeg" width="100" height="100"/>
+    
+    <br>  
+    <p3>
+       I enjoy phtotgraphing because I would like to capture all the views to some physical memory which I can keep forever. 
+    </p3>
+    <br>
+    <a href = "https://craftylikegranny.com/drawing-blogs/"> talent</a>
+   
+    <br>
+
+    <p4>Hey, click on the button below to get a different color</p4>
+    <p5 id = "color-container"></p5>
+    <!-- <button action="/test" onclick = "addColors();">
+        Test Servelet Test
+    </button> -->
+
+    <form action="/form-handler" method="POST">
+        <p>Enter your favorite quote here:</p>
+        <textarea name="text-input">type here</textarea>
+        <textarea name="email">type here</textarea>
+        <br/>
+        <input type="submit" />
+    </form>
+    
     </div>
   </body>
 </html>

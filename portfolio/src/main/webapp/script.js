@@ -17,7 +17,7 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+      ['I like boba', 'I like ice cream', 'I am a gamer', 'I am a professional figure skater'];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
@@ -25,4 +25,28 @@ function addRandomGreeting() {
   // Add it to the page.
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
+}
+
+
+
+async function addColors(){
+    const responseFromServer = await fetch('/test');
+    const textFromResponse = await responseFromServer.text();
+    // Parse the response as JSON.
+    const myObject = await responseFromServer.json();
+    const colorContainer = document.getElementById('color-container');
+    colorContainer.innerText = textFromResponse;
+}
+
+async function getColorQuotes(){
+    const responseFromServer = await fetch('/test');
+    const objectFromResponse = await responseFromServer.json();
+    console.log(objectFromResponse);
+    // Parse the response as JSON.
+    
+    const quotes = objectFromResponse[Math.floor(Math.random() * colors.length)];
+
+    const quotesContainer = document.getElementById('color-container');
+    quotesContainer.innerText = quotes;
+
 }
